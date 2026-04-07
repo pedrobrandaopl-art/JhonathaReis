@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/icons/scale.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Jhonatha Reis | Advogado Trabalhista</title>
+    <meta name="description" content="Advogado especialista em Direito Trabalhista. Defesa dos direitos do trabalhador, rescisões, horas extras e indenizações. Atendimento em todo o Brasil." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                300: '#EBE5DA', // Prata Bronzeado Pálido (Brilho)
+                400: '#D6C6B0', // Champagne Metálico Claro
+                500: '#C2A88A', // Bronze Prateado (Principal - Sofisticado)
+                600: '#A38A6D', // Bronze Médio
+                700: '#7D674E', // Bronze Escuro
+              },
+              navy: {
+                800: '#1e293b', // slate-800
+                900: '#0f172a', // slate-900
+                950: '#020617', // slate-950
+              }
+            },
+            fontFamily: {
+              serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'shine': 'shine 3s linear infinite',
+              'pulse-glow': 'pulseGlow 2s infinite',
+              'zoom-slow': 'zoomSlow 20s alternate infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              shine: {
+                '0%': { backgroundPosition: '200% center' },
+                '100%': { backgroundPosition: '-200% center' },
+              },
+              pulseGlow: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(194, 168, 138, 0.4)' }, // Ajustado para RGB do Bronze #C2A88A
+                '50%': { transform: 'scale(1.05)', boxShadow: '0 0 20px 0px rgba(194, 168, 138, 0.6)' },
+              },
+              zoomSlow: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.15)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .hero-gradient {
+        background: linear-gradient(to bottom, rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.9));
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #A38A6D; /* Bronze Médio */
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C2A88A; /* Bronze Principal */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#0a0a0a] text-slate-200 antialiased overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
